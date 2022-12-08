@@ -24,5 +24,8 @@ let package = Package(
         .testTarget(
             name: "MainPackageTests",
             dependencies: ["MainPackage"]),
+        .binaryTarget(
+                    name: "MainPackageFramework",
+                    path: "LoginFramework.xcframework")
     ]
 )
